@@ -15,8 +15,9 @@ namespace Wk.Application.DI
 {
     public class Initializer
     {
-        public static void Configure(IServiceCollection services)
+        public static void Configure(IServiceCollection services, string conection)
         {
+            services.AddDbContextPool<WkDbContext>(options => options.UseMySql(conection, ServerVersion.AutoDetect(conection)));
             services.AddScoped(typeof(IBaseRepository<>), typeof(BaseRepository<>));
             services.AddScoped(typeof(IUOW), typeof(UOW));
 

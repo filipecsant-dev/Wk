@@ -3,8 +3,9 @@ using Wk.Application.DI;
 
 var builder = WebApplication.CreateBuilder(args);
 
-Initializer.Configure(builder.Services);
 builder.Services.AddControllersWithViews();
+
+Initializer.Configure(builder.Services, builder.Configuration.GetConnectionString("DefaultConnection"));
 
 var app = builder.Build();
 

@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Wk.Domain.Interfaces;
 using Wk.Infrastructure.Context;
 
 namespace Wk.Infrastructure.Repository
 {
-    public class UOW
+    public class UOW : IUOW
     {
         private readonly WkDbContext _context;
 
