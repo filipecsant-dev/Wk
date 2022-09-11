@@ -3,8 +3,10 @@
 }
 <script src="~/js/produtos.js"></script>
 
+<a class="btn btn-success" asp-controller="Produtos" asp-action="Cadastrar" style="float:right;margin-bottom:30px;">Cadastrar Produto <i class="bi bi-check"></i></a>
+<br />
 <div class="col-md-12">
-    <h1 class="text-center fsize-22 m-b-xl" style="line-height: 1.4em">Produtos</h1>
+    <h1 class="text-center fsize-22 m-b-xl" style="line-height: 1.4em;">Produtos</h1>
 </div>
 <br />
 
@@ -12,18 +14,21 @@
 <table id="table" class="display">
     <thead>
         <tr>
-            <th>Column 1</th>
-            <th>Column 2</th>
+            <th>Nome</th>
+            <th>Categoria</th>
+            <th style="text-align:right;">Ações &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td>Row 1 Data 1</td>
-            <td>Row 1 Data 2</td>
-        </tr>
-        <tr>
-            <td>Row 2 Data 1</td>
-            <td>Row 2 Data 2</td>
+            <td>Row 1</td>
+            <td>Row 1</td>
+            <td>
+                <a class="btn btn-danger" asp-controller="Produtos" asp-action="Excluir" asp-route-id="1" style="float:right;margin-left:10px;"><i class="bi-x-circle"></i></a><!--Excluir-->
+                <a class="btn btn-warning" asp-controller="Produtos" asp-action="Editar" asp-route-id="1" style="float:right;margin-left:10px; color: #fff;"><i class="bi-pencil-square"></i></a><!--Editar-->
+                <a class="btn btn-primary" asp-controller="Produtos" asp-route-id="1" style="float:right;"><i class="bi bi-eye"></i></a><!--Visualizar-->
+                
+            </td>
         </tr>
     </tbody>
 </table>

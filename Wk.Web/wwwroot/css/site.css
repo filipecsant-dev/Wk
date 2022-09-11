@@ -64,3 +64,21 @@ header {
     font-size: 13px;
     text-align: left;
 }
+
+footer {
+    background: #ffab62;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-top:5px;
+}
+
+.containerbody {
+    background-color: #fdfdfd;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 25px;
+    height: 70vh;
+}
