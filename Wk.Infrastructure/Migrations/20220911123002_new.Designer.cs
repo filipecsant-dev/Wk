@@ -10,7 +10,7 @@ using Wk.Infrastructure.Context;
 namespace Wk.Infrastructure.Migrations
 {
     [DbContext(typeof(WkDbContext))]
-    [Migration("20220911122201_new")]
+    [Migration("20220911123002_new")]
     partial class @new
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

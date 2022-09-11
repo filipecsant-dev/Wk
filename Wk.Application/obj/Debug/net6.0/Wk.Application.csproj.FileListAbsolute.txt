@@ -17,5 +17,3 @@ C:\Users\Filipe\source\repos\Wk\Wk.Application\obj\Debug\net6.0\refint\Wk.Applic
 C:\Users\Filipe\source\repos\Wk\Wk.Application\obj\Debug\net6.0\Wk.Application.pdb
 C:\Users\Filipe\source\repos\Wk\Wk.Application\obj\Debug\net6.0\Wk.Application.genruntimeconfig.cache
 C:\Users\Filipe\source\repos\Wk\Wk.Application\obj\Debug\net6.0\ref\Wk.Application.dll
-C:\Users\Filipe\source\repos\Wk\Wk.Application\bin\Debug\net6.0\appsettings.Development.json
-C:\Users\Filipe\source\repos\Wk\Wk.Application\bin\Debug\net6.0\appsettings.json
