@@ -39,3 +39,5 @@ C:\Users\Filipe\source\repos\Wk\Wk.Web\obj\Debug\net6.0\refint\Wk.Web.dll
 C:\Users\Filipe\source\repos\Wk\Wk.Web\obj\Debug\net6.0\Wk.Web.pdb
 C:\Users\Filipe\source\repos\Wk\Wk.Web\obj\Debug\net6.0\Wk.Web.genruntimeconfig.cache
 C:\Users\Filipe\source\repos\Wk\Wk.Web\obj\Debug\net6.0\ref\Wk.Web.dll
+C:\Users\Filipe\source\repos\Wk\Wk.Web\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\Filipe\source\repos\Wk\Wk.Web\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

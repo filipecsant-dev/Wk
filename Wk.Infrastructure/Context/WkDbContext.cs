@@ -7,9 +7,7 @@ namespace Wk.Infrastructure.Context
 {
     public class WkDbContext : DbContext
     {
-        public WkDbContext()
-        {
-        }
+        protected WkDbContext(){}
 
         public WkDbContext(DbContextOptions<WkDbContext> options) : base(options) { }
 

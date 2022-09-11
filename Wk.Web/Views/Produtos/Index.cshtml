@@ -1,0 +1,69 @@
+﻿@model IEnumerable<Wk.Domain.Models.Produtos>
+
+@{
+    ViewData["Title"] = "Produtos";
+}
+
+<div id="page1">
+
+    <a class="btn btn-success" asp-controller="Produtos" asp-action="Cadastrar" style="float:right;margin-bottom:30px;">Cadastrar Produto <i class="bi bi-check"></i></a>
+    <br />
+    <div class="col-md-12">
+        <h1 class="text-center fsize-22 m-b-xl" style="line-height: 1.4em;">Produtos</h1>
+    </div>
+    <br />
+
+
+
+    <table id="table" class="display">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Categoria</th>
+                <th style="text-align:right;">Ações &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var p in Model)
+            {
+                <tr>
+                    <td>@p.Nome</td>
+                    <td>@p.Categoria</td>
+                    <td>
+                        <a class="btn btn-danger" asp-controller="Produtos" asp-action="Excluir" asp-route-id="@p.ID" style="float:right;margin-left:10px; color: #fff"><i class="bi-x-circle"></i></a><!--Excluir-->
+                        <a class="btn btn-warning" asp-controller="Produtos" asp-action="Editar" asp-route-id="@p.ID" style="float:right;margin-left:10px; color: #fff;"><i class="bi-pencil-square"></i></a><!--Editar-->
+                        <a class="btn btn-primary visu_prod" data-id="@p.ID" style="float:right; color: #fff;"><i class="bi bi-eye"></i></a><!--Visualizar-->
+                
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<div id="page2" style="display:none;">
+    <div>
+        <a class="btn btn-primary" id="voltar" style="float:right;margin-bottom:30px; color: #fff;"><i class="bi bi-arrow-return-left"></i></a>
+    </div>
+
+    <div class="conteudo" style="font-size: 18px; margin-top: 5vh;">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Descrição</th>
+                    <th>Categoria</th>
+                    <th>Quantidade</th>
+                </tr>
+            </thead>
+            <tbody>
+               <tr>
+                   <td id="Prod_Nome"></td>
+                   <td id="Prod_Descricao"></td>
+                   <td id="Prod_Categoria"></td>
+                   <td id="Prod_Qntd"></td>
+               </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

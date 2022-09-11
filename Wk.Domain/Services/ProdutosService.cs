@@ -16,6 +16,13 @@ namespace Wk.Domain.Services
             _produtosRepository = produtosRepository;
         }
 
-
+        public IEnumerable<Produtos> GetAll()
+        {
+            return _produtosRepository.GetAll();
+        }
+        public Produtos GetById(int id)
+        {
+            return _produtosRepository.GetById(id);
+        }
     }
 }
