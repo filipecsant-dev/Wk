@@ -9,9 +9,9 @@ namespace Wk.Infrastructure.Repository
 {
     public class UOW
     {
-        private readonly WkContext _context;
+        private readonly WkDbContext _context;
 
-        public UOW(WkContext context)
+        public UOW(WkDbContext context)
         {
             _context = context;
         }

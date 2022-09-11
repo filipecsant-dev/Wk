@@ -10,7 +10,7 @@ namespace Wk.Infrastructure.Repository
 {
     public class CategoriasRepository : BaseRepository<Categorias>
     {
-        public CategoriasRepository(WkContext context) : base(context)
+        public CategoriasRepository(WkDbContext context) : base(context)
         { }
 
 

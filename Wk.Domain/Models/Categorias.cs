@@ -8,5 +8,6 @@ namespace Wk.Domain.Models
 {
     public class Categorias : BaseEntity
     {
+        public string Nome { get; set; }
     }
 }

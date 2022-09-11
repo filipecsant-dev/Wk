@@ -11,8 +11,8 @@ namespace Wk.Infrastructure.Repository
 {
     public class BaseRepository<TEntity> : IBaseRepository<TEntity> where TEntity : BaseEntity
     {
-        protected readonly WkContext _context;
-        public BaseRepository(WkContext context)
+        protected readonly WkDbContext _context;
+        public BaseRepository(WkDbContext context)
         {
             _context = context;
         }

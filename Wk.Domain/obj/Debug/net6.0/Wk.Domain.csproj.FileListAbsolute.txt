@@ -1,0 +1,14 @@
+C:\Users\Filipe\source\repos\Wk\Wk.Domain\bin\Debug\net6.0\Wk.Domain.deps.json
+C:\Users\Filipe\source\repos\Wk\Wk.Domain\bin\Debug\net6.0\Wk.Domain.runtimeconfig.json
+C:\Users\Filipe\source\repos\Wk\Wk.Domain\bin\Debug\net6.0\Wk.Domain.dll
+C:\Users\Filipe\source\repos\Wk\Wk.Domain\bin\Debug\net6.0\Wk.Domain.pdb
+C:\Users\Filipe\source\repos\Wk\Wk.Domain\obj\Debug\net6.0\Wk.Domain.csproj.AssemblyReference.cache
+C:\Users\Filipe\source\repos\Wk\Wk.Domain\obj\Debug\net6.0\Wk.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Filipe\source\repos\Wk\Wk.Domain\obj\Debug\net6.0\Wk.Domain.AssemblyInfoInputs.cache
+C:\Users\Filipe\source\repos\Wk\Wk.Domain\obj\Debug\net6.0\Wk.Domain.AssemblyInfo.cs
+C:\Users\Filipe\source\repos\Wk\Wk.Domain\obj\Debug\net6.0\Wk.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Filipe\source\repos\Wk\Wk.Domain\obj\Debug\net6.0\Wk.Domain.dll
+C:\Users\Filipe\source\repos\Wk\Wk.Domain\obj\Debug\net6.0\refint\Wk.Domain.dll
+C:\Users\Filipe\source\repos\Wk\Wk.Domain\obj\Debug\net6.0\Wk.Domain.pdb
+C:\Users\Filipe\source\repos\Wk\Wk.Domain\obj\Debug\net6.0\Wk.Domain.genruntimeconfig.cache
+C:\Users\Filipe\source\repos\Wk\Wk.Domain\obj\Debug\net6.0\ref\Wk.Domain.dll

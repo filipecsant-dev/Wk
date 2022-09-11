@@ -1,0 +1,17 @@
+C:\Users\Filipe\source\repos\Wk\Wk.Infrastructure\bin\Debug\net6.0\Wk.Infrastructure.deps.json
+C:\Users\Filipe\source\repos\Wk\Wk.Infrastructure\bin\Debug\net6.0\Wk.Infrastructure.runtimeconfig.json
+C:\Users\Filipe\source\repos\Wk\Wk.Infrastructure\bin\Debug\net6.0\Wk.Infrastructure.dll
+C:\Users\Filipe\source\repos\Wk\Wk.Infrastructure\bin\Debug\net6.0\Wk.Infrastructure.pdb
+C:\Users\Filipe\source\repos\Wk\Wk.Infrastructure\bin\Debug\net6.0\Wk.Domain.dll
+C:\Users\Filipe\source\repos\Wk\Wk.Infrastructure\bin\Debug\net6.0\Wk.Domain.pdb
+C:\Users\Filipe\source\repos\Wk\Wk.Infrastructure\obj\Debug\net6.0\Wk.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Filipe\source\repos\Wk\Wk.Infrastructure\obj\Debug\net6.0\Wk.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Filipe\source\repos\Wk\Wk.Infrastructure\obj\Debug\net6.0\Wk.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Filipe\source\repos\Wk\Wk.Infrastructure\obj\Debug\net6.0\Wk.Infrastructure.AssemblyInfo.cs
+C:\Users\Filipe\source\repos\Wk\Wk.Infrastructure\obj\Debug\net6.0\Wk.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Filipe\source\repos\Wk\Wk.Infrastructure\obj\Debug\net6.0\Wk.Infrastructure.csproj.CopyComplete
+C:\Users\Filipe\source\repos\Wk\Wk.Infrastructure\obj\Debug\net6.0\Wk.Infrastructure.dll
+C:\Users\Filipe\source\repos\Wk\Wk.Infrastructure\obj\Debug\net6.0\refint\Wk.Infrastructure.dll
+C:\Users\Filipe\source\repos\Wk\Wk.Infrastructure\obj\Debug\net6.0\Wk.Infrastructure.pdb
+C:\Users\Filipe\source\repos\Wk\Wk.Infrastructure\obj\Debug\net6.0\Wk.Infrastructure.genruntimeconfig.cache
+C:\Users\Filipe\source\repos\Wk\Wk.Infrastructure\obj\Debug\net6.0\ref\Wk.Infrastructure.dll

@@ -3,10 +3,8 @@ using Wk.Application.DI;
 
 var builder = WebApplication.CreateBuilder(args);
 
-Initializer.Configure(builder.Services, builder.Configuration.GetConnectionString("DefaultConnection"));
+Initializer.Configure(builder.Services);
 builder.Services.AddControllersWithViews();
-
-
 
 var app = builder.Build();
 
