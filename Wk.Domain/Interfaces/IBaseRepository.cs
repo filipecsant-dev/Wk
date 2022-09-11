@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Wk.Domain.Interfaces
 {
-    public class IBaseRepository <TEntity> where TEntity : class
+    public interface IBaseRepository <TEntity> where TEntity : class
     {
         TEntity GetById(int id);
         IEnumerable<TEntity> GetAll();

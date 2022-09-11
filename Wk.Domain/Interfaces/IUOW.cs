@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Wk.Domain.Interfaces
 {
-    public class IUOW
+    public interface IUOW
     {
         Task Commit();
     }
