@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "7un/RkHzsh8fBOdCXKOyGffI9YCVKqBuek5Vvv//2/c=",
+  "Hash": "23PgtJ+AXXXuEA19UANudoZc765FGYM1G2KY4dYKKTw=",
   "Source": "Wk.Web",
   "BasePath": "_content/Wk.Web",
   "Mode": "Default",
@@ -83,23 +83,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
-    },
-    {
-      "Identity": "C:\\Users\\Filipe\\source\\repos\\Wk\\Wk.Web\\wwwroot\\js\\produtos.js",
-      "SourceId": "Wk.Web",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Filipe\\source\\repos\\Wk\\Wk.Web\\wwwroot\\",
-      "BasePath": "_content/Wk.Web",
-      "RelativePath": "js/produtos.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\produtos.js"
     },
     {
       "Identity": "C:\\Users\\Filipe\\source\\repos\\Wk\\Wk.Web\\wwwroot\\js\\site.js",

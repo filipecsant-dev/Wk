@@ -20,16 +20,15 @@ namespace Wk.Infrastructure.Repository
         public virtual TEntity GetById(int id)
         {
             var query = _context.Set<TEntity>().Where(e => e.ID == id);
-            if (query.Any())
-                return query.FirstOrDefault();
-            return null;
+
+                return query.First();
         }
 
         public virtual IEnumerable<TEntity> GetAll()
         {
             var query = _context.Set<TEntity>();
             if (query.Any())
-                return query.ToList();
+                return query.ToList().Where(x => x.ATIVO == true);
             return new List<TEntity>();
         }
 
