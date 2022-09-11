@@ -16,10 +16,33 @@ namespace Wk.Infrastructure.Repository
         {
             _context = context;
         }
-
-        public async Task Commit()
+        public void Dispose()
         {
-            await _context.SaveChangesAsync();
+            _context.Dispose();
+        }
+
+        public int Commit()
+        {
+            try
+            {
+                return _context.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public Task<int> CommitAsync()
+        {
+            try
+            {
+                return _context.SaveChangesAsync();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
     }
 }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "23PgtJ+AXXXuEA19UANudoZc765FGYM1G2KY4dYKKTw=",
+  "Hash": "w6Kw5/g5/t7Ws+ZQo8E6rQpA5rWIIMuISkNE1Eum8UA=",
   "Source": "Wk.Web",
   "BasePath": "_content/Wk.Web",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Filipe\\source\\repos\\Wk\\Wk.Web\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Wk.Web.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\Filipe\\source\\repos\\Wk\\Wk.Web\\wwwroot\\css\\cadastro.css",
+      "SourceId": "Wk.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Filipe\\source\\repos\\Wk\\Wk.Web\\wwwroot\\",
+      "BasePath": "_content/Wk.Web",
+      "RelativePath": "css/cadastro.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\cadastro.css"
     },
     {
       "Identity": "C:\\Users\\Filipe\\source\\repos\\Wk\\Wk.Web\\wwwroot\\css\\site.css",

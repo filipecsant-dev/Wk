@@ -8,6 +8,9 @@ namespace Wk.Domain.Interfaces
 {
     public interface IUOW
     {
-        Task Commit();
+        void Dispose();
+        int Commit();
+        Task<int> CommitAsync();
+
     }
 }

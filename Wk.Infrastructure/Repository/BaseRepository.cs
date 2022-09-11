@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,22 +20,85 @@ namespace Wk.Infrastructure.Repository
 
         public virtual TEntity GetById(int id)
         {
-            var query = _context.Set<TEntity>().Where(e => e.ID == id);
+            try
+            {
+                var query = _context.Set<TEntity>().Where(e => e.ID == id);
 
                 return query.First();
+            }
+                catch (Exception e)
+                {
+                    throw e;
+                }
         }
 
         public virtual IEnumerable<TEntity> GetAll()
         {
-            var query = _context.Set<TEntity>();
-            if (query.Any())
-                return query.ToList().Where(x => x.ATIVO == true);
-            return new List<TEntity>();
+            try
+            {
+                var query = _context.Set<TEntity>();
+                if (query.Any())
+                    return query.ToList().Where(x => x.ATIVO == true);
+                return new List<TEntity>();
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+        }
+
+        public virtual void Update(TEntity entityToUpdate)
+        {
+            try
+            {
+                _context.Attach(entityToUpdate);
+                _context.Entry(entityToUpdate).State = EntityState.Modified;
+
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+
+        }
+
+        public virtual void Delete(TEntity entityToDelete)
+        {
+            try
+            {
+                entityToDelete.ATIVO = false;
+                Update(entityToDelete);
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+
+        }
+
+        public virtual void Create(TEntity entity)
+        {
+            try
+            {
+                _context.Add(entity);
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
 
         public virtual void Save(TEntity entity)
         {
-            _context.Set<TEntity>().Add(entity);
+            try
+            {
+                _context.Set<TEntity>().Add(entity);
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+
         }
     }
 }
