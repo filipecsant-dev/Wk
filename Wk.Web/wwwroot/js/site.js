@@ -25,7 +25,7 @@
             success: (e) => {
                 $("#Prod_Nome").html(e.nome);
                 $("#Prod_Descricao").html(e.descricao);
-                $("#Prod_Categoria").html(e.categoria);
+                $("#Prod_Categoria").html(e.categoria.nome);
                 $("#Prod_Qntd").html(e.qntd);
 
 

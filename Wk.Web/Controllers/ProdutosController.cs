@@ -48,7 +48,7 @@ namespace Wk.Web.Controllers
                         Nome = model.Nome,
                         Descricao = model.Descricao,
                         Qntd = model.Qntd,
-                        Categoria = model.Categoria,
+                        CategoriaID = model.CategoriaID,
                         ATIVO = true
                     };
 
@@ -81,7 +81,7 @@ namespace Wk.Web.Controllers
                 Nome = produto.Nome,
                 Descricao = produto.Descricao,
                 Qntd = produto.Qntd,
-                Categoria = produto.Categoria
+                CategoriaID = produto.CategoriaID
             };
 
             return View(editProduto);
@@ -103,7 +103,7 @@ namespace Wk.Web.Controllers
                         Nome = model.Nome,
                         Descricao = model.Descricao,
                         Qntd = model.Qntd,
-                        Categoria = model.Categoria,
+                        CategoriaID = model.CategoriaID,
                         ATIVO = true
                     };
 

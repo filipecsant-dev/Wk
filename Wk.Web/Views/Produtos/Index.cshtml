@@ -28,7 +28,7 @@
             {
                 <tr>
                     <td>@p.Nome</td>
-                    <td>@p.Categoria</td>
+                    <td>@p.Categoria.Nome</td>
                     <td>
                         <a class="btn btn-danger excluir" data-id="@p.ID" data-tipo="produtos" style="float:right;margin-left:10px; color: #fff"><i class="bi-x-circle"></i></a><!--Excluir-->
                         <a class="btn btn-warning" asp-controller="Produtos" asp-action="Editar" asp-route-id="@p.ID" style="float:right;margin-left:10px; color: #fff;"><i class="bi-pencil-square"></i></a><!--Editar-->

@@ -45,9 +45,8 @@ namespace Wk.Infrastructure.Migrations
                     b.Property<bool>("ATIVO")
                         .HasColumnType("tinyint(1)");
 
-                    b.Property<string>("Categoria")
-                        .IsRequired()
-                        .HasColumnType("longtext");
+                    b.Property<int>("CategoriaID")
+                        .HasColumnType("int");
 
                     b.Property<string>("Descricao")
                         .IsRequired()
@@ -62,7 +61,20 @@ namespace Wk.Infrastructure.Migrations
 
                     b.HasKey("ID");
 
+                    b.HasIndex("CategoriaID");
+
                     b.ToTable("Produtos");
+                });
+
+            modelBuilder.Entity("Wk.Domain.Models.Produtos", b =>
+                {
+                    b.HasOne("Wk.Domain.Models.Categorias", "Categoria")
+                        .WithMany()
+                        .HasForeignKey("CategoriaID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Categoria");
                 });
 #pragma warning restore 612, 618
         }

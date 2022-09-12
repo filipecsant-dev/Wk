@@ -15,7 +15,7 @@ namespace Wk.Web.Models
         public string Descricao { get; set; }
         public int Qntd { get; set; }
         [Required(ErrorMessage = "Necessário a categoria.")]
-        public string Categoria { get; set; }
+        public int CategoriaID { get; set; }
     }
 
     public class EditarProdutoVM
@@ -31,7 +31,7 @@ namespace Wk.Web.Models
         public string Descricao { get; set; }
         public int Qntd { get; set; }
         [Required(ErrorMessage = "Necessário a categoria.")]
-        public string Categoria { get; set; }
+        public int CategoriaID { get; set; }
     }
 
     public class GetProdutoVM
