@@ -243,6 +243,8 @@
       },
       "Wk.Application/1.0.0": {
         "dependencies": {
+          "AutoMapper": "11.0.1",
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "11.0.0",
           "Microsoft.EntityFrameworkCore": "6.0.8",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
           "Pomelo.EntityFrameworkCore.MySql": "6.0.2",
@@ -254,6 +256,8 @@
       },
       "Wk.Domain/1.0.0": {
         "dependencies": {
+          "AutoMapper": "11.0.1",
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "11.0.0",
           "Microsoft.EntityFrameworkCore": "6.0.8",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
           "Pomelo.EntityFrameworkCore.MySql": "6.0.2"
@@ -264,6 +268,8 @@
       },
       "Wk.Infrastructure/1.0.0": {
         "dependencies": {
+          "AutoMapper": "11.0.1",
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "11.0.0",
           "Microsoft.EntityFrameworkCore": "6.0.8",
           "Microsoft.Extensions.Configuration.Json": "6.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",

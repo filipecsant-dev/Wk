@@ -1,0 +1,40 @@
+﻿@model IEnumerable<Wk.Domain.Models.Categorias>
+
+@{
+    ViewData["Title"] = "Categorias";
+}
+
+<div id="page1">
+
+    <a class="btn btn-success" asp-controller="Categorias" asp-action="Cadastrar" style="float:right;margin-bottom:30px;">Cadastrar Categoria <i class="bi bi-check"></i></a>
+    <br />
+    <div class="col-md-12">
+        <h1 class="text-center fsize-22 m-b-xl" style="line-height: 1.4em;">Categorias</h1>
+    </div>
+    <br />
+
+
+
+    <table id="table" class="display">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th style="text-align:right;">Ações &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var p in Model)
+            {
+                <tr>
+                    <td>@p.Nome</td>
+                    <td>
+                        <a class="btn btn-danger excluir" data-id="@p.ID" data-tipo="categorias" style="float:right;margin-left:10px; color: #fff"><i class="bi-x-circle"></i></a><!--Excluir-->
+                        <a class="btn btn-warning" asp-controller="Categorias" asp-action="Editar" asp-route-id="@p.ID" style="float:right;margin-left:10px; color: #fff;"><i class="bi-pencil-square"></i></a><!--Editar-->
+                       @* <a class="btn btn-primary visu" data-id="@p.ID" data-tipo="categorias" style="float:right; color: #fff;"><i class="bi bi-eye"></i></a><!--Visualizar-->*@
+                
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

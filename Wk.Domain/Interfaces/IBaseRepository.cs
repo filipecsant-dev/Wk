@@ -10,6 +10,9 @@ namespace Wk.Domain.Interfaces
     {
         TEntity GetById(int id);
         IEnumerable<TEntity> GetAll();
+        void Update(TEntity entityToUpdate);
+        void Delete(TEntity entityToDelete);
+        void Create(TEntity entity);
         void Save(TEntity entity);
     }
 }

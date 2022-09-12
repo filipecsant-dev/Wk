@@ -30,9 +30,9 @@
                     <td>@p.Nome</td>
                     <td>@p.Categoria</td>
                     <td>
-                        <a class="btn btn-danger" asp-controller="Produtos" asp-action="Excluir" asp-route-id="@p.ID" style="float:right;margin-left:10px; color: #fff"><i class="bi-x-circle"></i></a><!--Excluir-->
+                        <a class="btn btn-danger excluir" data-id="@p.ID" data-tipo="produtos" style="float:right;margin-left:10px; color: #fff"><i class="bi-x-circle"></i></a><!--Excluir-->
                         <a class="btn btn-warning" asp-controller="Produtos" asp-action="Editar" asp-route-id="@p.ID" style="float:right;margin-left:10px; color: #fff;"><i class="bi-pencil-square"></i></a><!--Editar-->
-                        <a class="btn btn-primary visu_prod" data-id="@p.ID" style="float:right; color: #fff;"><i class="bi bi-eye"></i></a><!--Visualizar-->
+                        <a class="btn btn-primary visu" data-id="@p.ID" data-tipo="produtos" style="float:right; color: #fff;"><i class="bi bi-eye"></i></a><!--Visualizar-->
                 
                     </td>
                 </tr>
