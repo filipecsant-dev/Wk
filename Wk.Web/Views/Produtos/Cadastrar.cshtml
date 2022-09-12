@@ -76,8 +76,14 @@
             <br />
             @Html.ValidationMessageFor(model => model.Categoria, "", new { @class="text-danger"})
             <br />
-            @*@Html.TextBoxFor(model => model.Categoria, new { @class = "fadeIn second", @placeholder="Categoria"})*@
-            @Html.DropDownListFor(model => model.Categoria, null, "- Selecione a categoria -", new { @class = "fadeIn second", @value = "0" })
+            <select name="Categoria" class="fadeIn second">
+                <option value="" selected>- Selecione a categoria -</option>
+                @foreach (var c in ViewBag.Categoria)
+                {
+                    <option value="@c.Nome">@c.Nome</option>
+                }
+                
+            </select>
         </div>
             
 

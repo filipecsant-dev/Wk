@@ -76,17 +76,20 @@
         <br />
         @Html.ValidationMessageFor(model => model.Categoria, "", new { @class="text-danger"})
         <br />
-        @Html.TextBoxFor(model => model.Categoria, new { @class = "fadeIn second", @placeholder="Categoria"})
+        <select name="Categoria" class="fadeIn second">
+            <option value="" selected>- Selecione a categoria -</option>
+            @foreach (var c in ViewBag.Categoria)
+            {
+                @if (Model.Categoria == c.Nome){
+                    <option value="@c.Nome" selected>@c.Nome</option>
+                }
+                else{
+                    <option value="@c.Nome">@c.Nome</option>
+                }
+            }
+
+        </select>
     </div>
-
-    @*<label>Plano:</label>
-            <select name="plano" class="form-group fadeIn second">
-                <option value="0" selected>- Categoria -</option>
-                <option value="1">Bronze</option>
-                <option value="2">Prata</option>
-                <option value="3">Ouro</option>
-            </select>*@
-
     <br />
     <br />
 

@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Wk.Domain.Interfaces;
 using Wk.Domain.Models;
 using Wk.Domain.Services;
@@ -10,10 +11,13 @@ namespace Wk.Web.Controllers
     public class ProdutosController : Controller
     {
         private readonly ProdutosService _produtosService;
+        private readonly CategoriasService _categoriasService;
 
-        public ProdutosController(ProdutosService produtosService)
+        public ProdutosController(ProdutosService produtosService,
+                                  CategoriasService categoriasService)
         {
             _produtosService = produtosService;
+            _categoriasService = categoriasService;
         }
 
 
@@ -25,6 +29,7 @@ namespace Wk.Web.Controllers
 
         public IActionResult Cadastrar()
         {
+            ViewBag.Categoria = _categoriasService.GetAll();
             return View();
         }
 
@@ -33,6 +38,8 @@ namespace Wk.Web.Controllers
         {
             try
             {
+                ViewBag.Categoria = _categoriasService.GetAll();
+
                 if (ModelState.IsValid)
                 {
 
@@ -65,6 +72,8 @@ namespace Wk.Web.Controllers
 
         public IActionResult Editar(int id)
         {
+            ViewBag.Categoria = _categoriasService.GetAll();
+
             var produto = _produtosService.GetById(id);
             var editProduto = new EditarProdutoVM()
             {
@@ -83,6 +92,8 @@ namespace Wk.Web.Controllers
         {
             try
             {
+                ViewBag.Categoria = _categoriasService.GetAll();
+
                 if (ModelState.IsValid)
                 {
 
