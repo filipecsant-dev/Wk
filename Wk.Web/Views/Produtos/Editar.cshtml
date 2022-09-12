@@ -74,17 +74,18 @@
         @Html.TextBoxFor(model => model.Qntd, new { @class = "fadeIn second", @type="number", @placeholder="Quantidade"})
 
         <br />
-        @Html.ValidationMessageFor(model => model.Categoria, "", new { @class="text-danger"})
+        @Html.ValidationMessageFor(model => model.CategoriaID, "", new { @class="text-danger"})
         <br />
-        <select name="Categoria" class="fadeIn second">
+        <select name="CategoriaID" class="fadeIn second">
             <option value="" selected>- Selecione a categoria -</option>
             @foreach (var c in ViewBag.Categoria)
             {
-                @if (Model.Categoria == c.Nome){
-                    <option value="@c.Nome" selected>@c.Nome</option>
+                @if (Model.CategoriaID == c.ID)
+                {
+                    <option value="@c.ID" selected>@c.Nome</option>
                 }
                 else{
-                    <option value="@c.Nome">@c.Nome</option>
+                    <option value="@c.ID">@c.Nome</option>
                 }
             }
 

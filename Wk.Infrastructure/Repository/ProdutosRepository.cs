@@ -17,19 +17,38 @@ namespace Wk.Infrastructure.Repository
 
         public override Produtos GetById(int id)
         {
-            var query = _context.Set<Produtos>().Where(e => e.ID == id);
+            var resultado = (from p in _context.Produtos
+                             from c in _context.Categorias.Where(x => x.ID == p.CategoriaID).DefaultIfEmpty()
+                             where p.ATIVO == true && p.ID == id
+                             select new Produtos
+                             {
+                                 ID = p.ID,
+                                 Nome = p.Nome,
+                                 Descricao = p.Descricao,
+                                 Qntd = p.Qntd,
+                                 CategoriaID = p.CategoriaID,
+                                 Categoria = c
+                             }).FirstOrDefault();
 
-            if (query.Any())
-                return query.First();
-
-            return null;
+            return resultado;
         }
 
         public override IEnumerable<Produtos> GetAll()
         {
-            var query = _context.Set<Produtos>();
+            var resultado = (from p in _context.Produtos
+                             from c in _context.Categorias .Where(x => x.ID == p.CategoriaID).DefaultIfEmpty()
+                             where p.ATIVO == true
+                             select new Produtos
+                             {
+                                 ID = p.ID,
+                                 Nome = p.Nome,
+                                 Descricao = p.Descricao,
+                                 Qntd = p.Qntd,
+                                 CategoriaID = p.CategoriaID,
+                                 Categoria = c
+                             });
 
-            return query.Any() ? query.ToList().Where(x => x.ATIVO == true) : new List<Produtos>();
+            return resultado;
         }
 
         public override void Update(Produtos produto)

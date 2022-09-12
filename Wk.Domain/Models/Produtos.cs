@@ -12,7 +12,10 @@ namespace Wk.Domain.Models
         public string Nome { get; set; }
         public string Descricao { get; set; }
         public int Qntd { get; set; }
+
         [ForeignKey("Categorias")]
-        public string Categoria { get; set; }
+        public int CategoriaID { get; set; }
+        public Categorias Categoria { get; set; }
+
     }
 }

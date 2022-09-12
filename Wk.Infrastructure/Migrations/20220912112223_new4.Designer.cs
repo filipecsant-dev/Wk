@@ -10,8 +10,8 @@ using Wk.Infrastructure.Context;
 namespace Wk.Infrastructure.Migrations
 {
     [DbContext(typeof(WkDbContext))]
-    [Migration("20220911150509_new2")]
-    partial class new2
+    [Migration("20220912112223_new4")]
+    partial class new4
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -47,9 +47,8 @@ namespace Wk.Infrastructure.Migrations
                     b.Property<bool>("ATIVO")
                         .HasColumnType("tinyint(1)");
 
-                    b.Property<string>("Categoria")
-                        .IsRequired()
-                        .HasColumnType("longtext");
+                    b.Property<int>("CategoriaID")
+                        .HasColumnType("int");
 
                     b.Property<string>("Descricao")
                         .IsRequired()
@@ -64,7 +63,20 @@ namespace Wk.Infrastructure.Migrations
 
                     b.HasKey("ID");
 
+                    b.HasIndex("CategoriaID");
+
                     b.ToTable("Produtos");
+                });
+
+            modelBuilder.Entity("Wk.Domain.Models.Produtos", b =>
+                {
+                    b.HasOne("Wk.Domain.Models.Categorias", "Categoria")
+                        .WithMany()
+                        .HasForeignKey("CategoriaID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Categoria");
                 });
 #pragma warning restore 612, 618
         }
